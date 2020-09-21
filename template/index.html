@@ -1,0 +1,197 @@
+{% load static %}
+<!doctype html>
+<html>
+ <head>
+   <title>Where to Watch?</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="//fonts.googleapis.com/css?family=Roboto:400,300,200,100&subset=latin,cyrillic" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+   <script src="https://kit.fontawesome.com/c700fa8235.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href='{% static "css/style1.css" %}'>
+
+   <!-- // [start style] -->
+
+   <!-- // [END style] -->
+ </head>
+ <body>
+   <!-- // [START headline] -->
+   <div id="headline">
+     <div class="container">
+       <header>
+         <h1>Where to Watch?</h1>
+         <p>The streaming search engine</p>
+
+       </header>
+       <div id="blurb">
+         <p>Remember the show or movie but not the platform it's streaming on? Whatever you want to watch, just type it in and find out where it's streaming.</p>
+         <p>Across Prime Video, Netflix, Hotstar+Disney and we're continuously adding more</p>
+         <p><b>Where to watch?</b><br>It really is that simple.  </p>
+         <p><img class="image-title" src='{% static "images/netflix.png" %}' width="70" height="60" alt="netflix">
+               <img class="image-title" style=" border-radius: 20%;" src='{% static "images/prime.jpg" %}' width="70" height="60" alt="prime">
+               <img class="image-title" style=" border-radius: 20%;" src='{% static "images/hulu.jpg" %}' width="70" height="60" alt="hulu">
+               <img class="image-title" style=" border-radius: 20%;" src='{% static "images/hotstar.jpg" %}' width="70" height="60" alt="disney"></p>
+               <img class="image-title" style=" border-radius: 20%;" src='{% static "images/zee.png" %}' width="70" height="60" alt="disney"></p>
+
+       </div>
+       <form method="post" id="register" action="rel">
+          {% csrf_token %}
+          <h2>Find Here!</h2>
+          <label for="name">Enter Movie/TV Series Name:</label>
+          <input class="form-control input-lg" id="searchText" name="cylinderVal" type="text" value={{temp.cylinders}}>
+                    <br>
+                    <button class="btn btn-secondary banner__button " type="submit"><i class="fas fa-search"></i> Search</button>
+       </form>
+
+       <br>
+
+     </div>
+
+   </div>
+
+   <!-- // [END headline] -->
+
+   <!-- // [START section1] -->
+   <div id="section1">
+     <div class="container container-fluid1">
+       <h2>What will I get?</h2>
+
+       <p>OTT Platforms availabel to us:</p>
+       <ul>
+         <li>Netflix</li>
+         <li>Prime Video</li>
+         <li>Hotstar</li>
+         <li>Zee5</li>
+         <li>Hulu</li>
+       </ul>
+
+       <br>
+       <div class="container">
+         <div id="movies" class="row"></div>
+       </div>
+
+     </div>
+   </div>
+   <!-- // [END section1] -->
+   <section style="background-color: black;text-align: center;color: #fff;">
+
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:448px">
+
+       <div class="carousel-inner">
+         <div class="carousel-item active container-fluid">
+           <h2 class="testimonial-text" style="font-weight: 800;font-size: 30px;line-height: 1.5;">Netflix, Inc. is an American technology and media services provider and production company. </h2>
+           <img class="testimonial-image " style="width: 10%;margin: 20px;" src='{% static "images/netflix.png" %}'>
+         </div>
+         <div class="carousel-item container-fluid">
+           <h2 class="testimonial-text" style="font-weight: 800;font-size: 30px;line-height: 1.5;">Prime Video, also marketed as Amazon Prime Video, is an American Internet video on demand.</h2>
+           <img class="testimonial-image" style="width: 10%;margin: 20px;border-radius: 50%;" src='{% static "images/prime.jpg" %}'>
+         </div>
+         <div class="carousel-item container-fluid">
+           <h2 class="testimonial-text" style="font-weight: 800;font-size: 30px;line-height: 1.5;">Watch movies, new TV shows, Hulu Originals, sports, live news, and more with Hulu.</h2>
+           <img class="testimonial-image" style="width: 10%;margin: 20px;border-radius: 50%;" src='{% static "images/hulu.jpg" %}'>
+         </div>
+         <div class="carousel-item container-fluid">
+           <h2 class="testimonial-text" style="font-weight: 800;font-size: 30px;line-height: 1.5;">Disney+ Hotstar, is an Indian over-the-top streaming a subsidiary of Disney's Star India.</h2>
+           <img class="testimonial-image" style="width:15%;margin: 0px;border-radius: 50%;" src='{% static "images/hotstar.jpg" %}'>
+         </div>
+         <div class="carousel-item container-fluid">
+           <h2 class="testimonial-text" style="font-weight: 800;font-size: 30px;line-height: 1.5;">ZEE5 is an Indian video on demand service run by Essel Group via its subsidiary Zee Entertainment Enterprises.</h2>
+           <img class="testimonial-image" style="width:15%;margin: 0px;border-radius: 50%;" src='{% static "images/zee.png" %}'>
+         </div>
+       </div>
+
+       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+       </a>
+     </div>
+
+
+   </section>
+   <!-- // [START section2] -->
+   <div id="section2">
+     <div class="container center">
+       <h2>Our Team</h2>
+       <div class="row">
+             <div class="col-lg-3 col-md-12">
+         <div class="card " style="width: 19rem;">
+           <img class="card-img-top" src='{% static "images/my.jpg" %}' height="500" width="50"  alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title"><strong>Faaraan Kazi</strong></h5>
+             <p class="card-text">
+               <ul>
+                 <li>Full Stack Developer</li>
+                 <li>Data Science enthusiast</li>
+                 <li>Tech Geek</li>
+               </ul>
+             </p>
+             <a href="https://www.linkedin.com/in/faaraan-kazi-935892191" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+           </div>
+         </div>
+       </div>
+
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="col-lg-3 col-md-12">
+
+         <div class="card" style="width: 19rem;">
+           <img class="card-img-top"  src='{% static "images/Preethy.jpg" %}' height="500" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title"><strong>Preethy Ann</strong></h5>
+             <p class="card-text">
+               <ul>
+                 <li>Digital Marketing Strategist</li>
+                 <li>ex-Amazon, Cognizant, UBS</li>
+                 <li>Data Science Enthusiast</li>
+               </ul>
+             </p>
+             <a href="https://www.linkedin.com/in/preethyann" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+       </div>
+       <br>
+     </div>
+   </div>
+   <!-- // [END section2] -->
+
+
+   <!-- // [START footer] -->
+   <footer id="footer" class="white-section">
+    <div class="container-fluid">
+      <p>NOTE:</p>
+      <p>We're continuously updating our database to be as current as possible. If you think we've missed any, please write to us with the name of the show/movie, and the platform, if you know it. We'll include it and be forever grateful to you. </p>
+      <br><br>
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope-square"></i>
+      <p>© Copyright 2020 Where to  Watch</p>
+
+    </div>
+  </footer>
+   <!-- // [END footer] -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <!-- <script src="{% static 'js/main.js' %}"></script> -->
+
+ </body>
+</html>

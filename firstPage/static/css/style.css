@@ -1,0 +1,174 @@
+body{
+  font-family: "Montserrat";
+  text-align: center;
+
+}
+h1, h2, h3, h4, h5, h6,p{
+  font-family: "Montserrat";
+}
+/* p{
+  color: #8f8f8f;
+} */
+.white-section{
+  background-color: #fff;
+}
+
+.icon:hover{
+  color: #ff4c68;
+}
+
+#testimonials{
+  background-color: #ef8172;
+}
+
+.testimonial-text{
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press{
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+.press-logo{
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+#features{
+  position: relative;
+
+}
+.feature-title{
+    font-weight:800;
+    font-size: 1.5rem;
+}
+.features-box{
+  padding: 5%;
+}
+.icon{
+    position: relative;
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.sty{
+  font-family: "Montserrat";
+  text-align: center;
+}
+.container-fluid{
+  padding:7% 15%;
+}
+.container-fluid1{
+  padding:1% 15%;
+}
+.colored-section{
+  background-color: #fa7d09;
+  color: #fff;
+  border-bottom-left-radius:20%;
+  border-bottom-right-radius:20%;
+}
+.colored-section2{
+  background-color: #ff4c68;
+  color: #fff;
+}
+.colored-section1{
+   background-color: #f9f7d9;
+}
+.big-heading{
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.5;
+}
+.navbar-brand1{
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3;
+  font-style: bold;
+
+}
+.image-title{
+   margin-right: 10px;
+}
+#title .container-fluid{
+  padding: 3% 15% 1%;
+  text-align: left;
+}
+.content{
+  padding: 3% 15% 7%;
+  text-align: left;
+  margin-right: 200px;
+}
+.navbar{
+    padding:0 0 4.5rem;
+}
+.nav-item{
+  padding: 0 18px;
+}
+.nav-link{
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+}
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 20rem;
+  font-weight:bold;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.center2 {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+
+
+}
+.center-top {
+  margin-right: 5rem;
+
+}
+
+.color{
+  background-color: #ffa36c;
+}
+.center1{
+  margin: auto;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  margin: -25px 0 0 -25px
+}
+.social-icon{
+  margin: 20px 10px;
+    text-align: center;
+}
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+/* Media Resolution for mobile */
+@media (max-width:1028px){
+  #title{
+    text-align: center;
+  }
+  .image-title{
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+.input-my{
+  width: 50%;
+  height:50%;
+}
