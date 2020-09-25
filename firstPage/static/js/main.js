@@ -16,7 +16,7 @@ function getMovies(searchText){
 
         output += `
         <a href="${movies.officialSite}">
-          <img class="row__poster" src='https://yt3.ggpht.com/a/AATXAJyzyrPJMwSCUxtTlY-MQ9sEqX8XHm8MYq4yr7e6Gw=s900-c-k-c0xffffffff-no-rj-mo' width="50" height="60" alt="netflix"></a>
+          <img class="row__poster" src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2015_N_logo.svg/493px-Netflix_2015_N_logo.svg.png' width="50" height="70" alt="netflix"></a>
         `;
 
         $('#movies').html(output);
