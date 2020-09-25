@@ -1,0 +1,441 @@
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #007bff;
+  color: #fff;
+  padding: 9px 18px;
+  border-radius: 6px;
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
+}
+
+.btn:hover {
+  background: #0062cc;
+}
+
+nav {
+  width: 100%;
+  padding: 14px 0;
+}
+
+hr {
+  width: 100%;
+  color: greenyellow;
+  margin-top: 0.56em;
+  margin-bottom: 0.56em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65%;
+  /* border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+nav .container .logo {
+  cursor: pointer;
+}
+
+nav .container .logo h2 {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url({% static 'images/main_theme.jpg' %}) no-repeat center/cover; */
+  position: relative;
+}
+
+.transbox {
+  background-color: #ffffff;
+  border: 100%;
+  opacity: 0.99;
+}
+
+.main .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #212529;
+  opacity: 0.4;
+}
+
+.main .container {
+  margin: auto;
+  text-align: center;
+
+  position: relative;
+}
+
+.main .container h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.main .container h3 {
+  color: greenyellow;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main .container .email {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.main .container .email input {
+  padding: 15px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 40%;
+}
+
+.main .container .email input::-webkit-input-placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.main .container .email input:-ms-input-placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.main .container .email input::-ms-input-placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.main .container .email input::placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.main .container .email .btn {
+  padding: 13px 34px;
+  margin-left: 16px;
+  border-color: #0062cc;
+}
+
+.products {
+  width: 100%;
+  padding: 70px 0;
+  background: white;
+}
+
+.products .container {
+  text-align: center;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  /* display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify; */
+  /* justify-content: space-between; */
+}
+
+.products .container .box {
+  width: 100%;
+  max-width: 30%;
+  text-align: center;
+}
+
+.products .container .box i {
+  color: #007bff;
+}
+
+.products .container .box h3 {
+  color: #212529;
+  font-size: 25px;
+  margin: 20px 0 10px 0;
+}
+
+.products .container .box p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery .container {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.gallery .container .card {
+  width: 100%;
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery .container .card.firstBg,
+.gallery .container .card.secondBg,
+.gallery .container .card.thirdBg {
+  height: 500px;
+}
+
+.gallery .container .card.firstBg {
+  background: url("./img/bg-showcase-1.jpg") no-repeat center/cover;
+}
+
+.gallery .container .card.secondBg {
+  background: url("./img/bg-showcase-2.jpg") no-repeat center/cover;
+}
+
+.gallery .container .card.thirdBg {
+  background: url("./img/bg-showcase-3.jpg") no-repeat center/cover;
+}
+
+.gallery .container .card .info {
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+.gallery .container .card .info h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #212529;
+  line-height: 1;
+}
+
+.gallery .container .card .info p {
+  margin: 15px 0 0 0;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.testimonials {
+  width: 100%;
+  padding: 100px 0;
+  background: rgb(255, 240, 33);
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 1;
+  color: #212529;
+}
+
+.testimonials .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 50px 0 0 0;
+}
+
+.testimonials .container .card {
+  width: 100%;
+  max-width: 30%;
+  text-align: center;
+}
+
+.testimonials .container .card img {
+  width: 170px;
+  height: auto;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 5px 0 #adb5bd;
+  box-shadow: 0 5px 5px 0 #adb5bd;
+}
+
+.testimonials .container .card h3 {
+  margin: 8px 0;
+  color: #212529;
+}
+
+.testimonials .container .card p {
+  color: #6c757d;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.signup {
+  width: 100%;
+  padding: 120px 0;
+  background: url("./img/bg-masthead.jpg") no-repeat center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.signup .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #212529;
+  opacity: 0.6;
+}
+
+.signup .container {
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.signup .container h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.signup .container .email {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.signup .container .email input {
+  padding: 15px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 40%;
+}
+
+.signup .container .email input::-webkit-input-placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.signup .container .email input:-ms-input-placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.signup .container .email input::-ms-input-placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.signup .container .email input::placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.signup .container .email .btn {
+  padding: 13px 34px;
+  margin-left: 16px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: greenyellow;
+  text-align: center;
+}
+
+/* footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer .container .links a {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 16px;
+  -webkit-transition: color 600ms, -webkit-text-decoration 600ms;
+  transition: color 600ms, -webkit-text-decoration 600ms;
+  transition: color 600ms, text-decoration 600ms;
+  transition: color 600ms, text-decoration 600ms, -webkit-text-decoration 600ms;
+}
+
+footer .container .links a:hover {
+  color: #004a99;
+  text-decoration: underline;
+}
+
+footer .container .links .copyright {
+  padding: 8px 0 0 0;
+}
+
+footer .container .links .copyright p {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+footer .container .icons i {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 25px;
+  -webkit-transition: color 500ms;
+  transition: color 500ms;
+}
+
+footer .container .icons i:hover {
+  color: #0056b3;
+} */
+/*# sourceMappingURL=style.css.map */
