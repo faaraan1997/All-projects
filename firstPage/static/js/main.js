@@ -1,6 +1,8 @@
 $(document).ready(() => {
   // $('#searchForm').on('click', (e) => {
+
     var searchText = $('#searchText').text();
+    // var searchText="money heist"
     console.log("oey :"+searchText);
     getMovies(searchText);
     // e.preventDefault();
