@@ -69,7 +69,7 @@ def rel(request):
     #director
     dir=str(countOfrow['Directors'])
     if dir=='nan':
-        director='Not Availabel !'
+        director='Not Available'
     else:
         director=countOfrow['Directors']
     #year

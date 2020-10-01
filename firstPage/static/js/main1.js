@@ -1,16 +1,16 @@
 $(document).ready(() => {
   // $('#searchForm').on('click', (e) => {
 
-    var searchText = $('#searchText').text();
+    var searchText = $('#searchText1').text();
     // var searchText="money heist"
-    console.log("oey :"+searchText);
+    console.log("oey :"+searchText1);
     getMovies(searchText);
     // e.preventDefault();
   // });
 });
 
-function getMovies(searchText){
-  axios.get("http://api.tvmaze.com/singlesearch/shows?q="+ searchText)
+function getMovies(searchText1){
+  axios.get("http://api.tvmaze.com/singlesearch/shows?q="+ searchText1)
     .then((response) => {
       console.log(response);
       let movies = response.data;
