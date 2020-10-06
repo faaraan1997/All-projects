@@ -44,8 +44,13 @@
           <form method="post" id="register" action="rel">
              {% csrf_token %}
              <div class="email">
-          <input id="searchText" name="cylinderVal" type="text"  placeholder="Enter movie or show name..." />
-          <button class="btn"  type="submit"><i class="fas fa-search"></i> Search</button>
+
+          <div style="width:100%;">
+   <input id="searchText" name="cylinderVal" type="text" style="width:40%;" placeholder="Enter movie or show name..." />
+          <br>
+          <br>
+            <button class="btn"  type="submit"><i class="fas fa-search"></i> Search</button>
+              </div>
         </form>
         </div>
 
@@ -85,9 +90,9 @@
         </div>
         <div class="card">
           <img src="{% static 'images/Preethy1.jpg' %}" alt="testimonial2" />
-          <h3>Preethy Ann</h3>
+          <h3>Preethy</h3>
           <p>
-            Digital marketing strategist. "Have fun and make, break, create"
+            Digital marketer, data science explorer, mother. "Walk the talk"
 
           </p>
         </div>

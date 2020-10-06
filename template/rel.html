@@ -37,10 +37,12 @@
                 class="fas fa-home"
                 style="color: white; font-size: 40px; padding: 20px"
                 href="/"
-              ></i><h1>|  &nbsp;</h1>
+              ></i>
+              <!-- <h1>|  &nbsp;</h1> -->
 
           <input id="searchText1" name="cylinderVal" type="text" placeholder="Enter movie or show name..." />
-          <button class="btn"  type="submit"><i class="fas fa-search"></i> Search </button>
+
+          <button class="btn" type="submit"><i class="fas fa-search"></i> Search </button>
           </form>
         </div>
 <!--
@@ -80,8 +82,10 @@
           {%  if error  %}
           <div id="headline">
             <div class="container">
-              <header>
-                <h1 style="font-family:'Ubuntu';">Searching for '{{val}}'</h1>
+              <header style="text-align: center;">
+                <h1 style="  font-family: 'Roboto';font-weight:400;">Sorry, the movie/TV series you are trying to find is not available. You might need to type in the exact spelling.</h1>
+                <br>
+                <h1 style="  font-family: 'Roboto';font-weight:400;">We're constantly working to update our database.</h1>
                 <!-- <p>{{val}}</p> -->
               </header>
             </div>
@@ -202,9 +206,9 @@
 
   {%  if error  %}
   <br>
-  <p style="font-size:1.5rem">{{title}}</p>
+  <!-- <p style="font-size:1.5rem">{{title}}</p> -->
   <br><br>
-  <a href="/" class="btn btn-success" role="button"><i class="fa fa-home"></i> Back to Home Page!</a>
+  <!-- <a href="/" class="btn btn-success" role="button"><i class="fa fa-home"></i> Back to Home Page!</a> -->
 
   {% endif %}
 

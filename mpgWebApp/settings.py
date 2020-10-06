@@ -23,7 +23,7 @@ STATIC_DIR = os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'y8d*&k0jv4c*zu^ykqz$=yyv@(lcmz495uj^()hthjs=x&&g0y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['where-to-watch001.herokuapp.com','127.0.0.1']
 
